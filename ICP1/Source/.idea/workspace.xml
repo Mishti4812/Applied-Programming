@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4a5ecf-9afc-4c69-9c6c-aa1312192b47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP1 - Tic Tac Toe/.idea/ICP1 - Tic Tac Toe.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP1 - Tic Tac Toe/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP1 - Tic Tac Toe/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP1 - Tic Tac Toe/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP1 - Tic Tac Toe/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP1 - Tic Tac Toe/.idea/workspace.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -88,16 +93,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548539029247</updated>
-      <workItem from="1548539031107" duration="297000" />
+      <workItem from="1548539031107" duration="761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297000" />
+    <option name="totallyTimeSpent" value="761000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
