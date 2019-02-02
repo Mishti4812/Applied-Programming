@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+</head>
+<body bgcolor="#1B4890">
+
+    <h1> Rock Paper Scissors! </h1>
+
+    <h2 id="Outcome">  </h2>
+
+    <!-- Setting buttons for the user to choice options -->
+    <button type="button" onclick="play('rock')">Rock</button>
+    <button type="button" onclick="play('paper')">Paper</button>
+    <button type="button" onclick="play('scissors')">Scissors</button>
+
+<script>
+    function play(user) { //Get computer choice
+
+        var computer = Math.random(); //Set the computer with a random choice to play against user.
+        if (computer < 0.30) {
+            computer = "rock";
+        } else if (computer < 0.50) {
+            computer = "paper";
+        } else {
+            computer = "scissors";
+        }
+
+        var outcomeResults = fight(user, computer); //Will use the options of the Computer and the user with the rules set above.
+        fightOutcome(outcomeResults);
+    }
+
+    function fight(user1, computer1) {  //Comparison between the options of the user and the computer.
+        if (user1 === computer1) { //If the user and the computer have the same choice then the game ends in a tie.
+            return "It's a tie!";
+        }
+        if (user1 === "rock") {
+            if (computer1 === "scissors") { //If the computer has the scissor choice while the user has rock picked, then the user wins.
+                return "You win! Rock beat scissors.";
+            } else {          //If the computer chooses paper while the user has rock, then the computer wins.
+                return "You lose! Paper beat rock!";
+            }
+        }
+        if (user1 === "paper") {
+            if (computer1 === "scissors") { //If the computer has scissor choice while the user has paper picked, then the computer wins.
+                return "You lose! Scissors beat paper!";
+            } else {        //If the computer has rock and the user has paper then the user wins.
+                return "You win! Paper beat rock!";
+            }
+        }
+        if (user1 === "scissors") {
+            if (computer1 === "rock") {  //If the computer has rock and the user has scissors then the computer wins.
+                return "You lose! Rock beat scissor!";
+            } else {         //If the computer has paper and the user has scissors then the user wins.
+                return "You win! Scissors beat paper!";
+            }
+        }
+    };
+
+    function fightOutcome(outcome) {
+        document.getElementById("Outcome").innerHTML = outcome;
+    }
+
+</script>
+
+</body>
+</html>
