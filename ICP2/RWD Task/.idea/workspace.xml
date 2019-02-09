@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05fa0836-f799-43dc-bd0e-6fc5001d9bb9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/input/input.html" beforeDir="false" afterPath="$PROJECT_DIR$/input/input.html" afterDir="false" />
-    </list>
+    <list default="true" id="05fa0836-f799-43dc-bd0e-6fc5001d9bb9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -36,7 +34,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="683" />
     <option name="height" value="768" />
   </component>
@@ -45,29 +43,11 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RWD Task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RWD Task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RWD Task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RWD Task" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Web_Lesson3/Web_Lesson3/In_Class_Exercise/PickMyFavoriteColor" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -96,15 +76,15 @@
       <workItem from="1549144893947" duration="257000" />
       <workItem from="1549297632646" duration="735000" />
       <workItem from="1549480816548" duration="229000" />
-      <workItem from="1549731389288" duration="625000" />
+      <workItem from="1549731389288" duration="809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1846000" />
+    <option name="totallyTimeSpent" value="2030000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="683" height="768" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
