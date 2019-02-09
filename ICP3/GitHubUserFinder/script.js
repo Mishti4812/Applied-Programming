@@ -26,8 +26,8 @@ function showUser(user) {
     const info_div = document.getElementById('information').innerHTML =
       `<p> Name: ${profile.name} </p>
       <p> ID: ${profile.id} </p>
-      <p> Link: ${profile.url} </p>`;
-}
+      <p><a href=${profile.html_url}> Profile Link</a></p>`
+};
 
 function noSuchUser(user) {
     //3. set the elements such that a suitable message is displayed
