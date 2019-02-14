@@ -9,3 +9,5 @@ var CourseDB = [
     {ID:7, Category:"IT", pic:"whitehat.png", name:" Begginers Guide to Penetration Testing", date:"11-15-2018", hours:"4", lectures:"12", instructor:"Harvy Wayne", Rating:3, price:"$99.99"},
     {ID:8, Category:"IT", pic:"server.png", name:"Windows Server Administrator - From Begginer to Pro", date:"02-04-2019", hours:"6", lectures:"15", instructor:"William Gates", Rating:3, price:"$79.99"}
 ];
+
+var AccountDB = [{ID:0, username:"jj123", fullname:"James Jameson", birthday:"12/15/1979", email:"jj@gmail.com", phone:"(123) 345-5678"}];
