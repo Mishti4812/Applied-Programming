@@ -1,12 +1,15 @@
 body {
    margin:0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Add image with opaque overlay */
     background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(img/bg3.jpeg) no-repeat center center fixed;
+    /* Force background image to stretch properly */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:cover;
 }
+/* drop font size as page shrinks */
 @media screen and (max-width: 1000px) {
     body .cardcontainer{
         font-size:.8em;
@@ -17,8 +20,7 @@ body {
         font-size:.7em;
     }
 }
-
-
+/* Hide scrollbar */
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -88,10 +90,9 @@ html, body  {
 }
 @media screen and (max-width: 600px) {
     #sideNav {
-        
+        /* Acting as an override */
       }
 }
-
 #sideNav > a
  {
      margin-top:0;
@@ -104,7 +105,6 @@ html, body  {
     display:block;
     
 }
-
 #sideNav >a:hover,span:hover{
     color:lightblue
 }
@@ -114,7 +114,6 @@ html, body  {
     margin-right:10%;
 }
 #subNav {
-    
   height: 100%;
   width:0;
   position: fixed;
@@ -126,7 +125,6 @@ html, body  {
   transition: 0.2s;
   padding-top: 30px;
 }
-
 #subNav > a
  {
      cursor:pointer;
@@ -144,10 +142,9 @@ html, body  {
 }
 
 #sideNavClose {
-    
     font-size:42px;
     padding-bottom:20px;
-    
+
 }
 .addtocart {
     background:rgb(13, 125, 216);
@@ -177,9 +174,6 @@ html, body  {
     -ms-user-select: none;
     user-select: none;
 }
-
-
-
 #mainContent {
     min-height:100%;
     margin-top:70px;
@@ -190,8 +184,6 @@ html, body  {
     flex-direction:row;
     flex-wrap: wrap;
 }
-
-
 @media screen and (max-width: 600px) {
     #mainContent {
         padding-top:25px;
