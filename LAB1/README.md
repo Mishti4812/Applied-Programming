@@ -7,9 +7,15 @@
   
   Side Menu
   ![drop_down](Drop_down.JPG)
+  
+  
   Courses
   ![courses](Courses.JPG)
+  
+  
   Orders
+  
+  
   Account
   ![login](Login.JPG)
  
