@@ -14,7 +14,7 @@
   ### Approach
   Our webapp is largely designed with a MVC approach in mind. We wanted to minimize repeated code and make the development process easier and more fun for everyone in the process. The site consists of two pages: the login (login.html) page and the ‘main’ page (index.html). The index serves as the layout for the webapp, this is where content that is always displayed goes (navigation elements, headers, footers etc.)
 
-  ![webpage format](/sources/webpage_format.png)
+  ![webpage format](/webpage_format.png)
 
   Instead of having a separate page for each functional item/area of the site, we use views. Views are just HTML code with templated data elements that get instantiated when called into view by the user (e.g clicking the Account link in the left navigation brings the Account page into the main content view). So, while the webapp has few traditional pages, it has many views and emphasizes DRY principles. This also allows us to work more efficiently not needing to chase changes in multiple pages and minimizes the risk of introducing inconsistency errors.
 
