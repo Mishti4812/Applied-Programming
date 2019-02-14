@@ -4,14 +4,15 @@
 
 
   # Features
-
-    - Side Menu
-    ![drop_down](Drop Down.JPG)
-    - Courses
-    ![courses](Courses.JPG)
-    - Orders
-    - Account
-    ![login](Login.JPG)
+  
+  Side Menu
+  ![drop_down](Drop Down.JPG)
+  Courses
+  ![courses](Courses.JPG)
+  Orders
+  Account
+  ![login](Login.JPG)
+ 
 
 
   ### Approach
