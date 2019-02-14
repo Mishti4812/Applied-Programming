@@ -308,3 +308,41 @@ display:inline;
 
     }
 }
+
+#logincontainer {
+    width:35%;
+    padding:25px;
+Background:Rgba(0,0,0,.75);
+margin:auto;
+margin-top:30vh;
+color:white;
+
+}
+#logincontainer > h2 {
+    margin-left:40%;
+    }
+#logincontainer > * {
+        margin-left:25%;
+        }    
+@media screen and (max-width: 600px) {
+    #logincontainer{
+        font-size:10px;
+
+    }
+}
+@media screen and (max-width: 600px) {
+    #username, #password{
+        font-size:10px;
+        width:15vw;
+}
+}
+
+#plainspan  {
+    margin-left:40%;
+    font-size: .8em;
+    color:white;
+}
+#plainspan:hover {
+    font-size: .8em;
+    color:white;
+}

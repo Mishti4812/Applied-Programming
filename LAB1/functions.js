@@ -1,4 +1,11 @@
-var curCategory = "";
+// Globals //
+username = '';
+//
+function mainload(){
+    loadCourses('');
+    document.getElementById('loggedInUser').value = username;
+}
+
 function sideNavToggle() {
     if (document.getElementById('sideNav').style.width == "200px"){
         document.getElementById('subNav').style.transition = "0.0s";
@@ -57,9 +64,9 @@ function loadCourses(category){
                             <p>${CourseDB[i].hours} Hours / ${CourseDB[i].lectures} Lectures </p>
                         </div> 
                         <div class='rightcard'>
-                            <h2>${CourseDB[i].price}</h2>
+                        <p><button class='addtocart'>Enroll</button></p>
                             <p class='ratingstars'>${numToRating(CourseDB[i].Rating)}</p>
-                            <p><button class='addtocart'>Enroll</button></p>
+                            
                             
                         </div>
                     </div>
@@ -94,9 +101,9 @@ function searchCourses(textevent){
                                 <p>${CourseDB[i].hours} Hours / ${CourseDB[i].lectures} Lectures </p>
                             </div> 
                             <div class='rightcard'>
-                                <h2>${CourseDB[i].price}</h2>
+                            <p><button class='addtocart'>Enroll</button></p>
                                 <p class='ratingstars'>${numToRating(CourseDB[i].Rating)}</p>
-                                <p><button class='addtocart'>Enroll</button></p>
+                               
                                 
                             </div>
                         </div>
@@ -106,4 +113,15 @@ function searchCourses(textevent){
             document.getElementById('mainContent').innerHTML = HTMLstring;
         }
     }
+}
+
+function login(){
+
+if (document.getElementById('username').value == ""|| document.getElementById('password').value == ""){
+    alert("Username or Password incorrect!");
+}
+else{
+    username = "test";
+    window.location.href ='index.html';
+}
 }

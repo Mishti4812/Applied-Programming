@@ -15,15 +15,15 @@
   <script src="data.js"></script>
 </head>
 
-<body onload="loadCourses('')">
+<body onload="mainload()">
         <div id="topNav">
                     <span onclick="sideNavToggle()"id="sideNavToggle" style="cursor:pointer;" >&#9776;</span>
                     <a id="siteName"  href="index.html">Course Buddy&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     <input id="searchBar" role="search" type="text" onkeyup="searchCourses(this)" placeholder="  Search..."/>
-                    <p style="float:right;"><a id="loginLink" href="login.html">Login</a></p>
+                    <span id="plainspan">Logged in as: </span><a href="javascript:loadAccount()" style="color:white;" id="loggedInUser"></a>
+                    <p style="float:right;"><a id="loginLink" href="login.html">Logout</a></p>
                  </div>
-                </div>
-             </div>
+           
     <div id="pagecontainer">
 
                 <div id="sideNav" >
