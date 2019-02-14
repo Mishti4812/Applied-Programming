@@ -1,3 +1,5 @@
+// loosely simulates a database table
+// course table
 var CourseDB = [
     {ID:0, Category:"Design", pic:"photoshop.png", name:"Photoshop CC - From Begginer to Pro", date:"11-15-2018", hours:"4", lectures:"12", instructor:"Dave Jones", Rating:3, price:"$39.99"},
     {ID:1, Category:"Design", pic:"blender.png", name:"3D Animation Using Blender", date:"07-29-2016", hours:"6", lectures:"23", instructor:"Lisa Su", Rating:5,price:"$49.99" },

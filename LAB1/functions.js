@@ -1,17 +1,18 @@
-// Globals //
-loggedin = "";
-//
+// onload method for body of index - initial behavior is to load all courses
 function mainload(){
     loadCourses('');
+    //set logged in user
     document.getElementById('plainspan').innerText = "Logged in as:  James Jameson";
 }
 
+// main side nav toggle collapse (set width to 0 or shows)
 function sideNavToggle() {
     if (document.getElementById('sideNav').style.width == "200px"){
         document.getElementById('subNav').style.transition = "0.0s";
         document.getElementById('sideNav').style.transition = "0.0s";
         document.getElementById('subNav').style.width = "0";
         document.getElementById('sideNav').style.width = "0";
+         // Enable below to have nav push body content instead of overlap
         //document.getElementById('mainContent').style.marginLeft = "10%";
         
     }
@@ -19,23 +20,28 @@ function sideNavToggle() {
         document.getElementById('subNav').style.transition = "0.2s";
         document.getElementById('sideNav').style.transition = "0.0s";;
         document.getElementById('sideNav').style.width = "200px";
+         // Enable below to have nav push body content instead of overlap
         //document.getElementById('mainContent').style.marginLeft = "12%";
     }
 }
+//sub nav for course categories toggle (sets width to 0 or shows)
 function subNavShow() {
         if(document.getElementById('subNav').style.width== "200px"){
             document.getElementById('subNav').style.width = "0";
             document.getElementById('courseMenuOption').style.color = '#FFFFFF';
+            // Enable below to have nav push body content instead of overlap
             //document.getElementById('mainContent').style.marginLeft = "12%";
         }
         else{
             document.getElementById('courseMenuOption').style.color = '#ADD8E6'; 
             document.getElementById('subNav').style.width = "0";
             document.getElementById('subNav').style.width = "200px";
+             // Enable below to have nav push body content instead of overlap
             //document.getElementById('mainContent').style.marginLeft = "22%";
         }
 }
 
+// hides any open navs, used when page outside of nav is clicked
 function clearNav(){
     document.getElementById('subNav').style.transition = "0.0s";
     document.getElementById('sideNav').style.transition = "0.1s";
@@ -43,12 +49,17 @@ function clearNav(){
     document.getElementById('subNav').style.width = "0";
 
 }
+//converts number of stars count (rating for course) to respective number of star symbols
 function numToRating(i){
    return `&#8902;`.repeat(i);
 }
+
+// loads courses by category
 function loadCourses(category){
     var HTMLstring = "";
+    // for each item in the 'DB' (array of objects)
     for (i=0;i<CourseDB.length;i++){
+        // each item is appended to the end of the existing HTML
         if (CourseDB[i].Category == category || category ==""){
             HTMLstring = `<div class='cardcontainer'>
             <div class='leftcard'>
@@ -73,19 +84,25 @@ function loadCourses(category){
                 </div>
         </div></div>` + HTMLstring
 }
+// set main content  div to render above results
 document.getElementById('mainContent').innerHTML = HTMLstring;
         }
         
     }
+
+// search courses based on input text in search box (textevent is textchanged)
 function searchCourses(textevent){
     var HTMLstring = "";
     var str = textevent.value.toString().toLowerCase();
     if (str == ""){
         loadCourses("");
         return;
+        //if empty it loads all courses, e.g search bar is backspaced out all the way - an empty list  doesnt feel right
     }
     if (str.length > 1){
+        // for each course in the array
         for (i=0;i<CourseDB.length;i++){
+            //if the courses name or category match the search text, append it the HTML
             if (CourseDB[i].name.toLowerCase().indexOf(str) >=0 ||CourseDB[i].Category.toLowerCase().indexOf(str) >= 0 ){
                 HTMLstring = `<div class='cardcontainer'>
                 <div class='leftcard'>
@@ -110,10 +127,13 @@ function searchCourses(textevent){
                     </div>
             </div></div>` + HTMLstring
             }
+            // set main content  div to render above results
             document.getElementById('mainContent').innerHTML = HTMLstring;
         }
     }
 }
+
+// similar to searchCourses() but since javasctipt doesnt support overloading, it was easiest to make a new method for a raw string (instead of text event)
 function searchCoursesByString(str){
     var HTMLstring = "";
     if (str == ""){
@@ -146,21 +166,25 @@ function searchCoursesByString(str){
                     </div>
             </div></div>` + HTMLstring
             }
+             // set main content  div to render above results
             document.getElementById('mainContent').innerHTML = HTMLstring;
         }
     }
 }
+// username and password can not be blank
+//redirect user to homepage otherwise
 function login(){
 
 if (document.getElementById('username').value == ""|| document.getElementById('password').value == ""){
     alert("Username or Password incorrect!");
 }
 else{
-    window.loggedin = document.getElementById('username').value;
     window.location.href ='index.html';
 }
 }
 
+//render the account view into the main content div
+// data is partially dummied here
 function loadAccount() {
 var user = AccountDB[0];
 HTMLstring = `
@@ -178,10 +202,11 @@ HTMLstring = `
         <li><a href="javascript:searchCoursesByString('video game design')">Video Game Design - Unreal Engine 4</a></li>
     </ul>
 </div>`
-
+ // set main content  div to render above HTML
 document.getElementById('mainContent').innerHTML = HTMLstring;
 }
 
+//render the order history view into the main content div, also dummy data (not pulling from the data.js file)
 function loadOrders() {
 HTMLstring = ` 
 <div class="accountCard noround">                                       
@@ -211,5 +236,6 @@ HTMLstring = `
         <p>Status: Complete</p></div>
     </div>     
 </div> `
+ // set main content  div to render above results
 document.getElementById('mainContent').innerHTML = HTMLstring;
 }
