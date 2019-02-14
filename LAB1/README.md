@@ -6,10 +6,12 @@
   # Features
   
   Side Menu
+  
   ![drop_down](Drop_down.JPG)
   
   
   Courses
+  
   ![courses](Courses.JPG)
   
   
@@ -17,6 +19,7 @@
   
   
   Account
+  
   ![login](Login.JPG)
  
 
