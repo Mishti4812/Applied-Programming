@@ -1,0 +1,409 @@
+body {
+   margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(img/bg3.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
+@media screen and (max-width: 1000px) {
+    body .cardcontainer{
+        font-size:.8em;
+    }
+}
+@media screen and (max-width: 600px) {
+    body .cardcontainer{
+        font-size:.7em;
+    }
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+html, body  {
+
+}
+
+
+#topNav{
+    background-color:rgba(0, 0, 0,.7);
+    height:50px;
+    width:100vw;
+    top:0;
+    padding-top:10px;
+    margin-left:0;
+    margin-right:5px;
+    position:fixed;
+    clear:both;
+    z-index:50;
+}
+
+#topNav > a,span {
+    margin:20px;
+    text-decoration:none;
+    font-size:24px;
+    color:White;
+}
+#topNav > a:hover,span:hover {
+    color:lightblue;
+}
+@media screen and (max-width: 600px) {
+    #topNav > a,p,span{
+        font-size:14px;
+    }
+}
+
+#searchBar{
+    height:25px;
+    width:300px;
+}
+@media screen and (max-width: 600px) {
+    #searchBar{
+        height:18px;
+        margin-right:10px;
+        width:110px;
+
+    }
+}
+@media screen and (max-width: 600px) {
+    #searchBar{
+        height:18px;
+    }
+}
+
+#sideNav {
+    
+  height: 100%;
+  width:0;
+  position: fixed;
+  z-index: 1;
+  top: 58px;
+  left: 0;
+  background-color:rgb(0,0,0,.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+@media screen and (max-width: 600px) {
+    #sideNav {
+        
+      }
+}
+
+#sideNav > a
+ {
+     margin-top:0;
+     cursor:pointer;
+    font-size:1.5em;
+    color:white;
+    padding:10px;
+    padding-left:25px;
+    text-decoration:none;
+    display:block;
+    
+}
+
+#sideNav >a:hover,span:hover{
+    color:lightblue
+}
+.navico{
+    width:15%;
+    height:15%;
+    margin-right:10%;
+}
+#subNav {
+    
+  height: 100%;
+  width:0;
+  position: fixed;
+  z-index: 1;
+  top: 58px;
+  left: 200px;
+  background-color:rgb(0,0,0,.8);
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 30px;
+}
+
+#subNav > a
+ {
+     cursor:pointer;
+    font-size:1.2em;
+    color:white;
+    padding:10px;
+    padding-left:15px;
+    text-decoration:none;
+    display:block;
+    transition:0.2s;
+}
+
+#subNav >a:hover,span:hover{
+    color:lightblue
+}
+
+#sideNavClose {
+    
+    font-size:42px;
+    padding-bottom:20px;
+    
+}
+.addtocart {
+    background:rgb(13, 125, 216);
+    color:white;
+    align-content: row;
+    border:none;
+    border-radius:8px;
+    padding:10px;
+    cursor:pointer;
+    width:80px;
+    }
+    .addtocart:focus{
+        outline:none;
+    }
+    @media screen and (max-width: 600px) {
+        .addtocart{
+            font-size:8px;
+            width:50px;
+        }
+    }
+    
+#sideNavToggle{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+#mainContent {
+    min-height:100%;
+    margin-top:70px;
+    margin-left:4%;
+    margin-right:0;
+    transition:0.2s;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 600px) {
+    #mainContent {
+        padding-top:25px;
+    }
+}
+#pageContainer {
+margin-top:50px;
+}
+.flexrow {
+display:flex;
+flex-direction: row;
+}
+.ratingstars{
+    margin-top:-20px;
+    color:darkgoldenrod;
+    font-size:40px;
+}
+@media screen and (max-width: 600px) {
+    .ratingstars {
+        font-size:25px;
+    }
+}
+
+.flexcolumn {
+display:flex;
+flex-direction: column;
+}
+
+.middlecard {
+    display:flex;
+    flex-direction:column;
+    padding:none;
+    
+}
+@media screen and (max-width: 600px) {
+    .middlecard > p{
+        font-size:.8em;
+    }
+}
+#loginLink{
+    padding-bottom:20px;
+    text-decoration:underline;
+    color:white;
+    font-size:13px;
+}
+@media screen and (max-width: 840px) {
+    #loginLink{
+        font-size:10px;
+    }
+}
+.accountcardimg {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.accountCard{
+    margin-left:10vw;
+border-radius:10px;
+background-color:rgba(255,255,255,.75);
+width:70%;
+min-width:400px;
+height:auto;
+padding:30px;
+margin-right:5vw;
+}
+@media screen and (max-width: 960px) {
+    .accountCard > img {
+        width:20%;
+        height:20%;
+    }
+}
+.accountCard > span {
+    color:black;
+    clear:both;
+}
+.accountCard > span:hover {
+    color:black;
+}
+.padded {
+    float:right;
+    padding-right:35%;
+    margin-top:10%;
+}
+.cardcontainer {
+border-radius:10px;
+background-color:rgba(255,255,255,.75);
+width:45%;
+min-width:400px;
+height:auto;
+padding:10px;
+padding-right:30px;
+margin-right:30px;
+margin-bottom:20px;
+box-shadow: 8px 8px 5px rgba(19, 19, 19, 0.8);
+}
+.cardcontainer > span {
+    color:rgb(27, 27, 27);
+    font-size:2em;
+    text-shadow:1px black;
+    font-weight:bold;
+    position:flex;
+
+}
+
+.cardcontainer > p {
+    font-size:.8em;
+}
+
+@media screen and (max-width: 1460px) {
+    .cardcontainer {
+        width:100%;
+    }
+}
+.rightcard {
+    padding-right:15px;
+margin-left:10%;
+display:inline;
+}
+.middlecard {
+    margin-left:10%;
+    text-shadow:3px black;
+}
+.leftcard > img { 
+    position:relative;  
+    float:left;
+    padding-right:2vw;
+    width:325px;
+    height:250px;
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top:10px;
+    padding-left:10px;
+    box-shadow:1px rgb(85, 85, 85);
+}
+@media screen and (max-width: 600px) {
+    .leftcard > img{
+        padding-right:15px;
+        float:left;
+        width:50%;
+        height:50%;
+        background-position:50% 50%;
+        background-repeat: no-repeat;
+        background-size:cover;
+
+
+    }
+}
+
+#logincontainer {
+    width:35%;
+    padding:25px;
+Background:Rgba(0,0,0,.75);
+margin:auto;
+margin-top:30vh;
+color:white;
+
+}
+#logincontainer > h2 {
+    margin-left:40%;
+    }
+#logincontainer > * {
+        margin-left:25%;
+        }    
+@media screen and (max-width: 600px) {
+    #logincontainer{
+        font-size:10px;
+
+    }
+}
+@media screen and (max-width: 600px) {
+    #username, #password{
+        font-size:10px;
+        width:15vw;
+}
+}
+
+#plainspan  {
+    float:right;
+    padding-right:10%;
+    font-size: .8em;
+    color:white;
+    white-space: pre;
+    clear:none;
+}
+#plainspan:hover {
+    font-size: .8em;
+    color:white;
+}
+@media screen and (max-width: 830px) {
+    #plainspan {
+        visibility:hidden;
+    }
+}
+
+.enrolledcourses > li,a{
+    color:rgb(0, 104, 165);
+    text-shadow:rgba(0,0,0,.5);
+}
+.ordercard {
+    border-radius:10px;
+    width:50%;
+    padding:20px;
+    color:white;
+    font-size:90%;
+    background:rgba(0,0,0,.6);
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+}
+
+.accountCard.noround {
+    border-radius:0;
+    text-align:right;
+}

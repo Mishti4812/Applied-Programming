@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Buddy</title>
+
+  <meta name="description" content="Online courses">
+  <meta name="author" content="ICP Team 3">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="functions.js"></script>
+  <script src="data.js"></script>
+</head>
+
+<body onload="mainload()" >
+        <div id="topNav">
+                    <span onclick="sideNavToggle()"id="sideNavToggle" style="cursor:pointer;" >&#9776;</span>
+                    <a id="siteName"  href="index.html">Course Buddy&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <input id="searchBar" role="search" type="text" onkeyup="searchCourses(this)" placeholder="  Search..."/>
+                    <span id="plainspan">Logged in as: </span></a>
+                 </div>
+           
+    <div id="pagecontainer">
+
+                <div id="sideNav" >
+                        <a href="index.html"><img src="img/homeicon.png" class="navico"/>Home</a>
+                        <a id="courseMenuOption" href="#" onclick="subNavShow()"><img src="img/courseicon.png" class="navico"/>Courses</a>
+                        <a href="javascript:loadOrders()"><img src="img/orders.png" class="navico" />Orders</a>
+                        <a href="javascript:loadAccount()"><img src="img/account.png" class="navico" />Account</a>    
+                        <a href="login.html"><img src="img/logout.png" class="navico" />Log Out</a>    
+                </div>
+                <div id="subNav">
+                    <br><br>
+                        <a href="javascript:loadCourses('Design')">Design</a>
+                        <a href="javascript:loadCourses('Development')">Development</a>
+                        <a href="javascript:loadCourses('IT')">IT</a> 
+                </div>
+                <div id="mainContent" onclick="clearNav()">
+                                       
+                </div>      
+                
+    </div>
+</body>
+</html>
