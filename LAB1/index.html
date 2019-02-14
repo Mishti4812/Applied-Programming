@@ -8,18 +8,18 @@
 
   <meta name="description" content="Online courses">
   <meta name="author" content="ICP Team 3">
-  <link rel="application/javascript" href="https://code.jquery.com/jquery-3.3.1.min.js">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="functions.js"></script>
   <script src="data.js"></script>
 </head>
 
-<body onload="loadCourses()">
+<body onload="loadCourses('')">
         <div id="topNav">
                     <span onclick="sideNavToggle()"id="sideNavToggle" style="cursor:pointer;" >&#9776;</span>
                     <a id="siteName"  href="index.html">Course Buddy&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                    <input id="searchBar" role="search" type="text" placeholder="  Search..."/>
+                    <input id="searchBar" role="search" type="text" onkeyup="searchCourses(this)" placeholder="  Search..."/>
                     <p style="float:right;"><a id="loginLink" href="login.html">Login</a></p>
                  </div>
                 </div>
@@ -34,11 +34,11 @@
                 </div>
                 <div id="subNav">
                     <br><br>
-                        <a href="#">Design</a>
-                        <a href="#">Development</a>
-                        <a href="#">IT</a> 
+                        <a href="javascript:loadCourses('Design')">Design</a>
+                        <a href="javascript:loadCourses('Development')">Development</a>
+                        <a href="javascript:loadCourses('IT')">IT</a> 
                 </div>
-                <div id="mainContent">
+                <div id="mainContent" onclick="clearNav()">
                                        
                 </div>      
                 
