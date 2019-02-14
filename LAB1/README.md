@@ -6,7 +6,7 @@
   # Features
   
   Side Menu
-  ![drop_down](Drop Down.JPG)
+  ![drop_down](Drop_down.JPG)
   Courses
   ![courses](Courses.JPG)
   Orders
