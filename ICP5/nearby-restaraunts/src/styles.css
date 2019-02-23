@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #039681;
+  font-family: 'Times New Roman', monospace;
+}
+
+h1 {
+  color: #960320;
+}
+
+h2 {
+  color: #01395C;
+}
+
+button {
+  background-color: #A7C5CA;
+  color: white;
+  margin-left: 2%;
+  height: 20px;
+}
+
+
+.wiki-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wiki-search {
+  margin: auto;
+}
+
+.wiki-search .container {
+  max-width: 1500px;
+}
+
+.wiki-search h1 {
+  font-size: 58px;
+  color: #444;
+}
+
+.recommendations {
+  margin-top: 15px;
+}
+
+.wiki-recommendations .list-group-item {
+  margin-top: 5px;
+
+}
+
+.wiki-recommendations .list-group-item a {
+  text-decoration: none;
+  color: #444;
+}
+
+.wiki-recommendations .list-group-item {
+  padding: 2px 20px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 0px 2px #ddd;
+  border-left: 5px solid transparent;
+}
+
+.wiki-recommendations .list-group-item h3 {
+  margin: 10px 0px;
+}
+
+.wiki-recommendations .list-group-item:hover {
+  border-left: 5px solid #A7C5CA;
+}
+
+.wiki-container .copy {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.input-group-addon {
+  cursor: pointer;
+}
+
+.loading {
+  text-align: center;
+  margin: 30px;
+  font-size: 38px;
+}
+
+li {
+  list-style-type: none;
+  background-color: #A7C5CA;
+}
+
+input {
+  width: 200px;
+  height: 20px;
+  font-size: 1em;
+}
