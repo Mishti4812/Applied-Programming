@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc0fa8ad-1ef4-48aa-9da2-76b122d0932a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CalculatorICP/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorICP/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorICP/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorICP/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoICP/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoICP/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoICP/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoICP/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoICP/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoICP/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LAB1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calc/src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDo/src.zip" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +18,7 @@
     <leaf />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ToDoICP" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,6 +40,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -51,35 +48,16 @@
               <item name="ICP4" type="b2602c69:ProjectViewProjectNode" />
               <item name="ICP4" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ICP4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ICP4" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoICP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ICP4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ICP4" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoICP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ICP4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ICP4" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoICP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ICP4" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="C:\Users\vp033089\Desktop\Applied-Programming\ICP4\CalculatorICP\node_modules\tslint" />
@@ -110,23 +88,19 @@
       <option name="presentableId" value="Default" />
       <updated>1550377350970</updated>
       <workItem from="1550377357166" duration="2556000" />
+      <workItem from="1550947864995" duration="948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2556000" />
+    <option name="totallyTimeSpent" value="3504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21502976" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -134,6 +108,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
