@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+	background-color:rgb(9, 59, 105);
+	color:white;
+	font-family:sans-serif;
+	
+}
+
+.bg {
+    background-color:lightblue;
+}
+
+.head {
+    background-color:purple;
+}
+
+.child {
+    background-color:orchid;
+}
+
+.food {
+    background-color:orange;
+}
+button{
+	background-color: lightblue;
+	border-radius: 4px;
+	padding:5px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+button:hover {
+	cursor:pointer;
+}
+#gameboard{
+	align-items:center;
+}
+td {
+    min-height:20px;
+    min-width:20px;
+}
+td:empty:after{
+    content: "\00a0";
+  }

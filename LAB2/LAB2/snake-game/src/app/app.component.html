@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <table id="head">
+    <tr>
+    <td>
+        <div style="visibility: hidden;">HELLO</div>
+    </td>
+    <td>
+        <h1>
+            Welcome to {{ title }}!
+          </h1>
+         
+          <button type="button" id="playbutton" (click)="startGame()">Play</button> 
+      </td>
+      <td>
+          <h2>
+              Score: {{score}}
+          </h2>
+          <h3> Top Score: {{ topscore }}</h3>
+         
+        </td>
+  </tr>
+  
+  
+  
+</table>
+<div id="gameboardcontainer" style="width:800px;height:700px;background-color:rgb(9, 59, 105);margin-left:auto;margin-right:auto;align-content:center;">
+    
+<table style="margin-left:auto;margin-right:auto;">
+  <tr *ngFor = "let row of gb">
+  <td *ngFor = "let col of row"  [ngClass]="{'bg': col.text == '0', 'head': col.text == '-1', 'child':col.text =='1','food': col.text == '2'}">
+  </td>
+</tr>
+</table>
+</div>
+<router-outlet></router-outlet>

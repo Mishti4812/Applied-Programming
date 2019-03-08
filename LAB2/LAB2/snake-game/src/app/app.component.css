@@ -1,0 +1,53 @@
+body {
+	background-color:rgb(9, 59, 105);
+	color:white;
+    font-family:sans-serif;
+    overflow-y:hidden;
+	overflow-x:hidden;
+}
+@media only screen and (max-width: 600px) {
+    body,div,h1,h2,h3{
+        font-size: 10pt;
+    }
+  }
+#head{
+    background-color:rgba(0,0,0,0.8);height:170px;text-align:center;margin-bottom:40px;margin-top:-20px;padding-top:10px;width:100vw;margin-left:-8px;
+}
+@media only screen and (max-width: 600px) {
+    #head {
+    height:90px;
+    }
+  }
+div{
+    overflow-y:hidden;
+	overflow-x:hidden;
+}
+.bg {
+    background-color:lightblue;
+}
+
+.head {
+    background-color:purple;
+}
+
+.child {
+    background-color:orchid;
+}
+
+.food {
+    background-color:orange;
+}
+
+td {
+    min-height:20px;
+    min-width:20px;
+}
+button {
+    margin-left:auto;
+    margin-right:auto;
+}
+@media only screen and (max-width: 700px) {
+    td {
+        height:5px;
+    }
+  }
