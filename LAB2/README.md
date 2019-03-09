@@ -11,6 +11,10 @@
 
   ### Approach
  ### Snake Game:
+ ![snake_game_loss](snakel.JPG)
+ 
+ ![snake_game_win](snakew.JPG)
+ 
 The snake game is written with angular, html and css. The design and flow of the snake game are both simple and rests on a few core functions. The gameboard is built as a 2D array (list of lists in angular/JS) that is mapped to a html table using nested angular ngFor loops (to build the rows and columns). Direction is set using the directional arrows, and the game logic runs on a timer loop (angular subscription). Before updating each frame on screen, the nextFrame method evaluates if the snake will grow from eating, die from a collision or will simply move and updates the 2D array accordingly. ApplicationRef in Angular is used at the end of each frame evaluation to trigger a page wide change detection, making the next frame appear on screen. The movement of the snake is achieved by setting each childs next position to the parents current location in each frame iteration.
 We started by working on getting the initial gameboard to properly display in the ngFor loops. Next we worked on methods to update the 2D to create movement on screen. Once basic movement was achieved, we worked on adding a child to the snake (eating) and getting the child to follow the parent. We created rules to detect death (hitting a wall or self) and wrapped all the methods into the nextFrame function. Lastly, we added a button to start the loop over again (play again) and keep track of the current and top score.
 
