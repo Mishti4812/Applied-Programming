@@ -9,7 +9,7 @@ var apiRouter = require('./routes/customer');
 
 var app = express();
 
-mongoose.connect('mongodb://lesson7:lesson7@ds135540.mlab.com:35540/crud-mean-app', {promiseLibrary: require('bluebird')})
+mongoose.connect('mongodb+srv://mishti:Krishna0323@cluster0-na8wg.mongodb.net/test?retryWrites=true', {promiseLibrary: require('bluebird')})
   .then(() => console.log('connection successful'))
   .catch((err) => console.error(err));
 

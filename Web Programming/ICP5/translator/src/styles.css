@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #9DEEB5;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+#choose_container {
+  display: flex;
+  margin-bottom: 3%;
+}
+
+li {
+  list-style-type: none;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #9DEEB5;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #9DEEB5;
+}
+
+#from_choose {
+  margin-right: 2%;
+}
+
+input {
+  border-width:0px;
+  border:none;
+  height: 100px;
+  background-color: #74ED97;
+  color: #444444;
+}
+
+*:focus {
+  border-width:0px;
+  border:none;
+}
