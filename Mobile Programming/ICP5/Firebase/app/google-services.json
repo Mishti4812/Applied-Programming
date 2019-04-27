@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "157021504453",
+    "firebase_url": "https://theta-totem-238218.firebaseio.com",
+    "project_id": "theta-totem-238218",
+    "storage_bucket": "theta-totem-238218.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157021504453:android:56a405a4512b9794",
+        "android_client_info": {
+          "package_name": "com.vrusha.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157021504453-q1vmjfckvtb9p8gsit14tc1shlgblvpc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRBHDr3_FeEUMBO-9N7SI6sBKJpJUuQ_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157021504453-q1vmjfckvtb9p8gsit14tc1shlgblvpc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
